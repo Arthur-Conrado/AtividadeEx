@@ -23,7 +23,7 @@ public class ExController {
     }
     @GetMapping("/api/teste/subtracao/{numUm}/{numDois}")
     public int subtracao(@PathVariable int numUm,@PathVariable int numDois){
-        int subtracao = numUm + numDois;
+        int subtracao = numUm - numDois;  
         return subtracao;
     }
     @GetMapping("/api/teste/{numPar}")
